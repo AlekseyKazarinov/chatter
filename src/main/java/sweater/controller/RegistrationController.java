@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import sweater.repos.Role;
-import sweater.repos.User;
+import sweater.domain.Role;
+import sweater.domain.User;
 import sweater.repos.UserRepository;
 
 import java.util.Collections;
