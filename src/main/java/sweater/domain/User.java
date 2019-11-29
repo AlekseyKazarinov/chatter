@@ -42,6 +42,10 @@ public class User implements UserDetails {
     private String password;
     private boolean active;
 
+    public boolean isAdmin() {
+        return roles.contains(Role.ADMIN);
+    }
+
     // аннотация помогает формировать доп. таблицу, хранящую enum
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     // описывает, что данное поле хранится в отдельной таблце, для которого
