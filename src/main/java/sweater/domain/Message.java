@@ -4,17 +4,20 @@ import javax.persistence.*;
 
 @Entity
 public class Message {
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private Long id;
 
     private String text;
+
     private String tag;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")  // чтобы в БД было имя не author
     private User author;
-    private String filename;
 
+    private String filename;
 
     public Message() {
     }
@@ -23,6 +26,14 @@ public class Message {
         this.text = text;
         this.tag = tag;
         this.author = user;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getAuthorName() {
@@ -35,14 +46,6 @@ public class Message {
 
     public void setAuthor(User author) {
         this.author = author;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getText() {
@@ -68,6 +71,4 @@ public class Message {
     public void setFilename(String filename) {
         this.filename = filename;
     }
-
-
 }
