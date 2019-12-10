@@ -1,7 +1,7 @@
-package sweater.repos;
+package chatter.repos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import sweater.domain.User;
+import chatter.domain.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     User findByUsername(String username);

@@ -1,4 +1,4 @@
-package sweater.controller;
+package chatter.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -6,9 +6,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import sweater.domain.Role;
-import sweater.domain.User;
-import sweater.service.UserService;
+import chatter.domain.Role;
+import chatter.domain.User;
+import chatter.service.UserService;
 
 import java.util.Map;
 

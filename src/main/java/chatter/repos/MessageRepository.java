@@ -1,7 +1,7 @@
-package sweater.repos;
+package chatter.repos;
 
 import org.springframework.data.repository.CrudRepository;
-import sweater.domain.Message;
+import chatter.domain.Message;
 
 import java.util.List;
 

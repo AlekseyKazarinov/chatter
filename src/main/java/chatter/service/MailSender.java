@@ -1,4 +1,4 @@
-package sweater.service;
+package chatter.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

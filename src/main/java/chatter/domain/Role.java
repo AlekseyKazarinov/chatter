@@ -1,4 +1,4 @@
-package sweater.domain;
+package chatter.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 
